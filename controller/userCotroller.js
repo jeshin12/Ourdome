@@ -13,7 +13,13 @@ module.exports={
     },
 
     rooms(req,res){
+        
         res.render('user/rooms',{showHeaderAndFooter:true})
+    },
+
+    about(req,res){
+
+        res.render('user/about',{showHeaderAndFooter:true})
     }
 
 

@@ -20,6 +20,11 @@ module.exports={
     about(req,res){
 
         res.render('user/about',{showHeaderAndFooter:true})
+    },
+
+    contact(req,res){
+
+        res.render('user/contact',{showHeaderAndFooter:true})
     }
 
 

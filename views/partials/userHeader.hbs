@@ -1,3 +1,10 @@
+ <style>
+    .special-link{
+       color :rgb(255, 255, 255);
+       font-family:  sans-serif;
+    }
+ </style>
+ 
  <!-- header-start -->
     <header>
         <div class="header-area ">
@@ -8,14 +15,9 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        {{!-- <li><a class="active" href="index.html">home</a></li> --}}
+                                        
 
-                                        <li><a href="/">home <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                
-                                                <li><a href="/360Tour">View Our 360 Tour </a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="/">home </a> </li>
                                         <li><a href="/rooms">rooms</a></li>
                                         <li><a href="/about">About</a></li>
                                         {{!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
@@ -29,11 +31,16 @@
                                                 <li><a href="elements.html">elements</a></li>
                                             </ul>
                                         </li>
+                                        {{!-- <li><a href="/EatDrink">Eat&Drink </a> --}}
                                         <li><a href="/contact">Contact</a></li>
+                                        
+                                        
                                     </ul>
                                 </nav>
+                                 
                             </div>
                         </div>
+                         
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
                                 <a href="/">
@@ -42,7 +49,15 @@
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-4 d-none d-lg-block">
+                            
                             <div class="book_room">
+
+                            
+                         {{#if showHeaderAndFooter}}
+
+                          <a class="special-link" href="/360Tour">View Our 360 Tour </a>
+                            
+                                {{else}}
                                 <div class="socail_links">
                                     <ul>
                                         <li>
@@ -62,6 +77,8 @@
                                         </li>
                                     </ul>
                                 </div>
+                                {{/if}}
+
                                 <div class="book_btn d-none d-lg-block">
                                     <a class="popup-with-form" href="#test-form">Book A Room</a>
                                 </div>
